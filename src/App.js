@@ -1,41 +1,39 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import Particles from 'react-particles-js';
-import Navbar from './components/Navbar';
-import Header from './components/Header';
+import Header from './screens/Header';
+import Sidebar from './components/Sidebar';
+import {Switch, Route} from 'react-router-dom';
+import About from './screens/About';
+import { useState } from 'react'
 
 function App() {
+  const [navToggle, setNavToggle] = useState(false)
+
+  const navclick = () => {
+    setNavToggle(!navToggle)
+  }
   return (
-    <>
-      <Particles
-        params={{
-          particles: {
-            number: {
-              value: 30,
-              density: {
-                enable: true,
-                value_area: 900
-              }
-            },
-            shape: {
-              type: 'star',
-              color: '#f9ab00',
-              stroke: {
-                width: 6,
-                color: '#f9ab00'
-              }
-            },
-            line_linked: {
-              color: '#ef4035',
-              width: 3, 
-            }
-          }
-        }}
-      />
-      <Navbar/>
-      <Header/>
-    </>
+    <div className='App'>
+      <div className="side_bar">
+        <Sidebar show={navToggle} click={navclick}/>
+      </div> 
+      <div className="nav-btn" onClick={navclick}>
+        <div className="lines-1"></div>
+        <div className="lines-2"></div>
+        <div className="lines-3"></div>  
+      </div>   
+      <div className="main-content">
+        <Switch>
+          <Route path='/' exact>
+            <Header/>
+          </Route>
+          <Route path='/about' exact>
+            <About/>
+          </Route>
+        </Switch>
+      </div>
+    </div>
   );
 }
 
