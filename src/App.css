@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
 :root {
-  --project-height: 100vh;
+  --project-height: 200vh;
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   /* --primary-dark: rgba(255,255,255,0); */
@@ -155,12 +155,13 @@ body::-webkit-scrollbar-track {
   position: fixed;
   z-index: 7;
   border-right: 1px solid #2e344e;
+  transition: all .4s ease-in-out;
+  transform-origin: left;
 }
 
 @media screen and (max-width: 1000px) {
   .sidebar {
-    /* transform: translateX(-100%); */
-    display: none;
+    transform: translateX(-100%);
     width: 35%;
   }
   .main-content{
@@ -168,8 +169,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
   }
   .nav-toggle {
-    /* transform: translateX(0) !important;  */
-    display: block;
+    transform: translateX(0) !important;
   }
 }
 

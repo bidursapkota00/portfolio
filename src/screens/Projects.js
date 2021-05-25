@@ -5,9 +5,23 @@ import '../styles/Projects.css'
 import projects from '../components/Projects'
 import { useState } from 'react'
 
+const allCategories = ['All', ...new Set(projects.map(item => item.category))]
+
 function Projects() {
-    const [Categories, setCategories] = useState(null)
-    const [Menu, setMenu] = useState(projects)
+    const [categories, setCategories] = useState(allCategories)
+    const [menu, setMenu] = useState(projects)
+
+    const filter = category => {
+        if(category === 'All'){
+            setMenu(projects)
+            return
+        }
+        const filteredData = projects.filter(item => {
+            return item.category === category
+        })
+        setMenu(filteredData)
+    }
+    
     return (
         <div className='Projects'>
             <div className="projects-container">
@@ -18,8 +32,8 @@ function Projects() {
                     </h3>
                 </div>
                 <div className="project">
-                    <Categories/>
-                    <MenuItem menu={Menu}/>
+                    <Categories filter={filter} categories={categories}/>
+                    <MenuItem menu={menu}/>
                 </div>
             </div>
         </div>
