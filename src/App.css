@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap'); */
 :root {
+  --project-height: 100vh;
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   /* --primary-dark: rgba(255,255,255,0); */
@@ -75,6 +76,7 @@ body::-webkit-scrollbar-track {
   /* color: var(--primary-white); */
   color: var(--primary-white);
   text-transform: capitalize;
+  margin: 1rem 0;
 }
 
 @media(max-width: 768px) {
@@ -260,5 +262,10 @@ body::-webkit-scrollbar-track {
   }
   .lines-1, .lines-2, .lines-3 {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .icons {
+    margin-top: 2rem;
   }
 }

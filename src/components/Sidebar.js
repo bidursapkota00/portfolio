@@ -28,16 +28,8 @@ function Sidebar({show, click}) {
 
                     <li className="nav-item" onClick={click}>
                         <div className="alink">
-                            <NavLink to='/portfolios' exact activeClassName='active' className=''>
-                                Portfolios
-                            </NavLink>
-                        </div>
-                    </li>
-
-                    <li className="nav-item" onClick={click}>
-                        <div className="alink">
-                            <NavLink to='/blogs' exact activeClassName='active' className=''>
-                                Blogs
+                            <NavLink to='/projects' exact activeClassName='active' className=''>
+                                Projects
                             </NavLink>
                         </div>
                     </li>

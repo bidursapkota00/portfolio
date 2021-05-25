@@ -6,7 +6,8 @@ import Sidebar from './components/Sidebar';
 import {Switch, Route} from 'react-router-dom';
 import About from './screens/About';
 import { useState } from 'react'
-
+import Contact from './screens/Contact'
+import Projects from './screens/Projects'
 function App() {
   const [navToggle, setNavToggle] = useState(false)
 
@@ -30,6 +31,12 @@ function App() {
           </Route>
           <Route path='/about' exact>
             <About/>
+          </Route>
+          <Route path='/projects' exact>
+            <Projects/>
+          </Route>
+          <Route path='/contact' exact>
+            <Contact/>
           </Route>
         </Switch>
       </div>

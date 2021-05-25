@@ -49,6 +49,11 @@
 }
 @media (max-width: 418px) {
     .AboutPage {
-        height: 3250px;
+        height: 3300px;
+    }
+}
+@media (max-width: 300px) {
+    .AboutPage {
+        height: 3400px;
     }
 }

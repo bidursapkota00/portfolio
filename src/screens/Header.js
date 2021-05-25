@@ -45,7 +45,7 @@ function Header() {
                     backSpeed={60}
                     loop
                 />
-                <a href="#" className="btn-main-offer">contact me</a>
+                <button className="btn btn-main-offer">contact me</button>
                 <div className="icons">
                     <Link className='icon-holder'>
                             <FontAwesomeIcon icon={faFacebook} className='icon fb'/>

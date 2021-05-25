@@ -1,0 +1,8 @@
+.Projects {
+    padding: 1px;
+   height: var(--project-height); 
+    background-color: rgba(0, 0, 0, 0.808);
+}
+.projects-container {
+    margin: 4rem;
+}
