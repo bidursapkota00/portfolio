@@ -2,10 +2,10 @@ import React from 'react'
 import Typed from 'react-typed'
 import {faFacebook} from '@fortawesome/free-brands-svg-icons'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
-import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import Particles from 'react-particles-js'
+import li from '../img/li.png'
 
 function Header() {
     return (
@@ -45,17 +45,19 @@ function Header() {
                     backSpeed={60}
                     loop
                 />
-                <button className="btn btn-main-offer">contact me</button>
+                <a href="/contact">
+                    <button className="btn btn-main-offer">contact me</button>
+                </a>
                 <div className="icons">
-                    <Link className='icon-holder'>
+                    <a className='icon-holder' href='https://www.facebook.com/bdur.sapkota'>
                             <FontAwesomeIcon icon={faFacebook} className='icon fb'/>
-                    </Link>
-                    <Link className='icon-holder'>
+                    </a>
+                    <a className='icon-holder' href='https://github.com/bidursapkota00'>
                             <FontAwesomeIcon icon={faGithub} className='icon git'/>
-                    </Link>
-                    <Link className='icon-holder'>
-                            <FontAwesomeIcon icon={faYoutube} className='icon utub'/>
-                    </Link>
+                    </a>
+                    <a className='icon-holder' href='https://www.linkedin.com/in/bidur-sapkota-3aa054203/'>
+                            <img src={li} alt=""/>
+                    </a>
                 </div>
            </div> 
         </div>

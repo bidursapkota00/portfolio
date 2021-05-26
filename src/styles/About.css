@@ -107,3 +107,8 @@
 .btn:hover::after {
     width: 100%;
 }
+@media (min-width: 372px) and (max-width: 445px) {
+    .AboutPage {
+        height: 3500px !important;
+    }
+}

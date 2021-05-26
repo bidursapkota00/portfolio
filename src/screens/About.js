@@ -48,7 +48,9 @@ function About() {
                                 <p>: Sindhupalchowk, Nepal</p>
                             </div>
                         </div>
-                        <button className='btn'>Download CV</button>
+                        <a href="/BidurSapkota.pdf" download>
+                            <button className='btn'>Download CV</button>
+                        </a>
                     </div>
                 </div>
                 <div className='Title'>
