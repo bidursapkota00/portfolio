@@ -29,7 +29,7 @@ const projects = [
     {
         id: 3,
         category: 'React Js',
-        link1: '#',
+        link1: 'https://github.com/bidursapkota00/portfolio',
         link2: 'https://portfolio-d636c.web.app/',
         icon1: icon1,
         icon2,
