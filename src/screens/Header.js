@@ -6,6 +6,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 // import {Link} from 'react-router-dom'
 import Particles from 'react-particles-js'
 import li from '../img/li.png'
+import insta from '../img/insta.png'
 
 function Header() {
     return (
@@ -57,6 +58,9 @@ function Header() {
                     </a>
                     <a className='icon-holder' href='https://www.linkedin.com/in/bidur-sapkota-3aa054203/'>
                             <img src={li} alt=""/>
+                    </a>
+                    <a className='icon-holder' href='https://www.instagram.com/b2r548/'>
+                            <img src={insta} alt=""/>
                     </a>
                 </div>
            </div> 

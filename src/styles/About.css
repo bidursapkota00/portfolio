@@ -1,5 +1,5 @@
 .AboutPage {
-    height: 1700px;
+    height: 1750px;
     background-color: rgba(0, 0, 0, 0.808);
 }
 .Title {
@@ -107,7 +107,7 @@
 .btn:hover::after {
     width: 100%;
 }
-@media (min-width: 372px) and (max-width: 445px) {
+@media (max-width: 460px) {
     .AboutPage {
         height: 3500px !important;
     }

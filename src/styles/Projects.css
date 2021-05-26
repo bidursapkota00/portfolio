@@ -119,7 +119,7 @@ a {
         height: 50vh;
     }
     .Projects {
-        height: 330vh;
+        height: 340vh;
     }
 }
 @media (max-width: 500px) {
@@ -127,7 +127,7 @@ a {
         height: 40vh;
     }
     .Projects {
-        height: 270vh;
+        height: 290vh;
     }
 }
 @media (max-width: 425px) {
@@ -156,7 +156,7 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
     .Projects {
-        height: 270vh;
+        height: 300vh;
     }
 }
 .menu-title {
