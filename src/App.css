@@ -122,13 +122,13 @@ body::-webkit-scrollbar-track {
   color: blue;
 }
 .git {
-  color: black;
+  color: wheat;
 }
 .fb:hover {
   color: rgba(0, 0, 255, 0.63);
 }
 .git:hover {
-  color: #fff;
+  color: burlywood;
 }
 .icon-holder > img {
   height: 1.8rem;
