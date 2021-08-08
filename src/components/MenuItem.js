@@ -11,8 +11,18 @@ function MenuItem({menu}) {
                                 <img src={item.image} alt="" />
                                 <ul className="hover-items">
                                     <li>
-                                        <a href={item.link1}><img src={item.icon1} alt="" /></a>
-                                        <a href={item.link2}><img src={item.icon2} alt="" /></a>
+                                        {
+                                            item.title !== 'keepNotes Apk' ?
+                                            <>
+                                            <a href={item.link1} target="_blank" rel="noreferrer"><img src={item.icon1} alt="" /></a>
+                                            <a href={item.link2} target="_blank" rel="noreferrer"><img src={item.icon2} alt="" /></a>
+                                            </>
+                                            :
+                                            <>
+                                            <a href={item.link1} target="_blank" rel="noreferrer"><img src={item.icon1} alt="" /></a>
+                                            <a download href={item.link2}><img src={item.icon2} alt="" /></a>
+                                            </>
+                                        }
                                     </li>
                                 </ul>
                             </div>

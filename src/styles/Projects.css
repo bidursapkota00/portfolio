@@ -111,7 +111,7 @@ a {
         height: 60vh;
     }
     .Projects {
-        height: 370vh;
+        height: 3700px;
     }
 }
 @media (max-width: 575px) {
@@ -119,7 +119,7 @@ a {
         height: 50vh;
     }
     .Projects {
-        height: 340vh;
+        height: 3400px;
     }
 }
 @media (max-width: 500px) {
@@ -127,7 +127,7 @@ a {
         height: 40vh;
     }
     .Projects {
-        height: 290vh;
+        height: 2900px;
     }
 }
 @media (max-width: 425px) {
@@ -145,7 +145,7 @@ a {
         height: 15vh;
     }
     .Projects {
-        height: 200vh;
+        height: 2000px;
     }
 }
 @media (max-width: 460px) {
@@ -156,7 +156,7 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
     .Projects {
-        height: 300vh;
+        height: 3000px;
     }
 }
 .menu-title {

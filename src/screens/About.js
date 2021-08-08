@@ -22,7 +22,7 @@ function About() {
                         <img src={about} alt="...about img"/>
                     </div>
                     <div className="about-info">
-                        <h4>I am <span>Bidur Sapkota</span></h4>
+                        <h4><span>Bidur Sapkota</span></h4>
                         <p className='about-text'>
                             I am python and javascript developer.
                             <br />
@@ -41,7 +41,7 @@ function About() {
                             </div>
                             <div className="right-section">
                                 <p>: Bidur Sapkota</p>
-                                <p>: 21</p>
+                                <p>: {new Date().getFullYear()-2000}</p>
                                 <p>: Nepal</p>
                                 <p>: Nepali</p>
                                 <p>: English, Nepali</p>

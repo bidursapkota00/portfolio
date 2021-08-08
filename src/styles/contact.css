@@ -1,6 +1,6 @@
 .contact-wrap {
     padding: 1px;
-    height: 120vh;
+    height: 1000px;
     background-color: rgba(0, 0, 0, 0.808);
 }
 .contact-container {
@@ -103,4 +103,10 @@
 }
 .App {
     width: 100%;
+}
+@media(max-width: 435px){
+    .contact-sect, .map-sect {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }

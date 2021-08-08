@@ -4,6 +4,8 @@ import proj3 from '../img/proj3.png'
 import proj4 from '../img/proj4.png'
 import icon1 from '../img/github.svg'
 import icon2 from '../img/link.jpg'
+import proj5 from '../img/shop-redux.png'
+import proj6 from '../img/keepNotes.png'
 
 const projects = [
     {
@@ -30,7 +32,7 @@ const projects = [
         id: 3,
         category: 'React Js',
         link1: 'https://github.com/bidursapkota00/portfolio',
-        link2: 'https://portfolio-d636c.web.app/',
+        link2: 'https://bidursapkota.com.np/',
         icon1: icon1,
         icon2,
         image: proj4,
@@ -45,6 +47,26 @@ const projects = [
         icon2,
         image: proj1,
         title: 'Chat Web App'
+    },
+    {
+        id: 5,
+        category: 'React Js',
+        link1: 'https://github.com/bidursapkota00/shop-redux',
+        link2: 'https://meroshoppingmart.web.app/',
+        icon1: icon1,
+        icon2,
+        image: proj5,
+        title: 'Chat Web App'
+    },
+    {
+        id: 6,
+        category: 'React Native',
+        link1: 'https://github.com/bidursapkota00/keepNotes',
+        link2: '/keepNotes.apk',
+        icon1: icon1,
+        icon2,
+        image: proj6,
+        title: 'keepNotes Apk'
     },
 ]
 

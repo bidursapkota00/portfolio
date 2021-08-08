@@ -5,7 +5,7 @@ import avatar from '../img/1.png'
 function Sidebar({show, click}) {
     return (
         <div className={`sidebar ${show ? "nav-toggle" : ""}`}>
-            <nav className="nav">
+            <nav className="nave">
                 <div className="profile">
                     <img src={avatar} alt="profile pic..."/>
                 </div>
@@ -44,7 +44,7 @@ function Sidebar({show, click}) {
                 </ul>
                 <footer className="footer">
                     <p>
-                        @2021 bidur sapkota
+                        @2021 Bidur Sapkota
                     </p>
                 </footer>
             </nav>

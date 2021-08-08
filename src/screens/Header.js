@@ -50,16 +50,16 @@ function Header() {
                     <button className="btn btn-main-offer">contact me</button>
                 </a>
                 <div className="icons">
-                    <a className='icon-holder' href='https://www.facebook.com/bdur.sapkota'>
+                    <a className='icon-holder' href='https://www.facebook.com/bdur.sapkota' target="_blank">
                             <FontAwesomeIcon icon={faFacebook} className='icon fb'/>
                     </a>
-                    <a className='icon-holder' href='https://github.com/bidursapkota00'>
+                    <a className='icon-holder' href='https://github.com/bidursapkota00' target="_blank">
                             <FontAwesomeIcon icon={faGithub} className='icon git'/>
                     </a>
-                    <a className='icon-holder' href='https://www.linkedin.com/in/bidur-sapkota-3aa054203/'>
+                    <a className='icon-holder' href='https://www.linkedin.com/in/bidur-sapkota-3aa054203/' target="_blank">
                             <img src={li} alt=""/>
                     </a>
-                    <a className='icon-holder' href='https://www.instagram.com/b2r548/'>
+                    <a className='icon-holder' href='https://www.instagram.com/b2r548/' target="_blank">
                             <img src={insta} alt=""/>
                     </a>
                 </div>

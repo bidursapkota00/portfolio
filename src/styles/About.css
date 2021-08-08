@@ -65,7 +65,9 @@
     font-size: 2rem;
 }
 .about-info > h4 > span {
-    color: blueviolet;
+    color: rgb(177, 255, 58);
+    font-size: 3.5rem;
+    font-family: "Aguafina Script",cursive;
 }
 .about-text {
     padding: 1rem 0;
@@ -92,6 +94,8 @@
     letter-spacing: 2px;
     margin-top: 1rem;
     position: relative;
+    color: rgb(242, 212, 157);
+    text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 .btn::after {
     position: absolute;
