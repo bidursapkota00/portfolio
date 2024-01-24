@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/test.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar__hamburger" id="hamburger">
+        <div class="sidebar__hamburger__lines">
+          <div class="sidebar__hamburger__line"></div>
+          <div class="sidebar__hamburger__line"></div>
+          <div class="sidebar__hamburger__line"></div>
+        </div>
+      </div>
+
+      <div class="sidebar__content">
+        <img
+          class="sidebar__image"
+          src="images/about.jpg"
+          alt="Profile Image"
+        />
+        <h2 class="sidebar__name">bidur sapkota</h2>
+        <h3 class="sidebar__job">
+          developer <span class="sidebar__country">in nepal</span>
+        </h3>
+
+        <ul class="sidebar__list">
+          <li class="sidebar__list__item">Home</li>
+          <li class="sidebar__list__item">About</li>
+          <li class="sidebar__list__item">Services</li>
+          <li class="sidebar__list__item">skills</li>
+          <li class="sidebar__list__item">education</li>
+          <li class="sidebar__list__item">experience</li>
+          <li class="sidebar__list__item">work</li>
+          <li class="sidebar__list__item">contact</li>
+        </ul>
+
+        <p class="sidebar__copyright">
+          &copy; Copyright &copy; 2024 All rights reserved | This template is
+          made with &#x2764; by <span>Bidur</span>
+        </p>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__job">Hi!<br />I am Developer</h1>
+        <h2 class="hero__edu">
+          Electronics, Communication & Information Engineer
+        </h2>
+        <button class="hero__btn">Download CV <i>^</i></button>
+      </section>
+    </main>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar__hamburger__translate");
+      });
+    </script>
+  </body>
+</html>
