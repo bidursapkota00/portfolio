@@ -55,6 +55,7 @@
 }
 
 .sidebar__name {
+  font-family: "Playfair Display", serif;
   font-size: 22px;
   font-weight: bold;
   color: #000;
@@ -63,8 +64,8 @@
 }
 
 .sidebar__job {
-  font-size: 12.5px;
-  font-weight: normal;
+  font-size: 12px;
+  font-weight: 400;
   color: #2c98f0;
   text-transform: uppercase;
 }
