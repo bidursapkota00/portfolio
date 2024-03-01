@@ -18,9 +18,11 @@
     />
 
     <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/sidebar-test.css" />
     <link rel="stylesheet" href="css/hero-test.css" />
     <link rel="stylesheet" href="css/about-test.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
     <nav class="sidebar">
@@ -71,9 +73,9 @@
       </button>
     </section>
 
-    <section id="about">
-      <span class="about__us">about us</span>
-      <h2 class="about__i">who am i?</h2>
+    <section id="about" class="section">
+      <span class="section__title">about us</span>
+      <h2 class="section__subtitle">who am i?</h2>
       <p class="about_description">
         <strong>Hi I'm Bidur Sapkota</strong>
         On her way she met a copy. The copy warned the Little Blind Text, that
@@ -112,6 +114,88 @@
         <button>hire me</button>
       </div>
     </section>
+
+    <section id="contact" class="section">
+      <span class="section__title">get in touch</span>
+      <h2 class="section__subtitle">contact</h2>
+      <div class="contact__container">
+        <div class="contact__informations">
+          <div class="contact__information">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <h2>info@example.com</h2>
+          </div>
+          <div class="contact__information">
+            <i class="fa-regular fa-map"></i>
+            <h2>Nakhipot, Lalitpur, Nepal, 44700</h2>
+          </div>
+          <div class="contact__information">
+            <i class="fa-solid fa-phone-flip"></i>
+            <h2>+977 9865711881</h2>
+          </div>
+        </div>
+
+        <form class="contact__form" method="post" onsubmit="submitForm(event);">
+          <input
+            class="contact__input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+
+          <input
+            class="contact__input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            class="contact__input"
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+
+          <textarea
+            id="message"
+            class="contact__textarea"
+            name="message"
+            placeholder="Message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button class="contact__button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+
+        alert(
+          "Name: " +
+            name +
+            "\nEmail: " +
+            email +
+            "\nSubject: " +
+            subject +
+            "\nMessage: " +
+            message
+        );
+      }
+    </script>
 
     <script>
       const hamburger = document.getElementById("hamburger");
