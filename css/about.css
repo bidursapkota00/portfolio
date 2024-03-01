@@ -1,0 +1,38 @@
+#about {
+  margin-top: 100px;
+  padding: 15px;
+}
+
+.about__us {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.about__i {
+  margin-bottom: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  color: black;
+  font-family: "Playfair Display", serif;
+}
+
+.about_description {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.about_description:last-of-type {
+  margin-bottom: 40px;
+}
