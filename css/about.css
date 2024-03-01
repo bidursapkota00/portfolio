@@ -24,7 +24,7 @@
   font-family: "Playfair Display", serif;
 }
 
-.about_description {
+.about__description {
   font-family: "Quicksand", sans-serif;
   font-weight: normal;
   line-height: 1.8;
@@ -33,6 +33,29 @@
   margin-bottom: 10px;
 }
 
-.about_description:last-of-type {
+.about__description:last-of-type {
   margin-bottom: 40px;
+}
+
+.about__box {
+  color: #fff;
+  border-bottom: 2px solid #2c98f0;
+  padding: 24px;
+  box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+  margin-bottom: 50px;
+}
+
+.about__box > i {
+  margin-bottom: 20px;
+  color: #2c98f0;
+  font-size: 30px;
+}
+
+.about__box > h3 {
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }
