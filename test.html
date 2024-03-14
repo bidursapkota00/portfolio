@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="css/about-test.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/work-count.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/experience.css" />
   </head>
   <body>
     <nav class="sidebar">
@@ -75,7 +77,7 @@
     </section>
 
     <section id="about" class="section">
-      <span class="section__title">about us</span>
+      <span class="section__title">about me</span>
       <h2 class="section__subtitle">who am i?</h2>
       <p class="about_description">
         <strong>Hi I'm Bidur Sapkota</strong>
@@ -125,6 +127,114 @@
       <span>clients</span>
       <span>10</span>
       <span>partners</span>
+    </section>
+
+    <section id="skills" class="section">
+      <span class="section__title">my speciality</span>
+      <span class="section__subtitle">my skills</span>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+        tempora molestias placeat atque, repellat nihil! Iusto sequi earum autem
+        libero ullam! Natus est recusandae corporis maiores, nostrum totam illum
+        at.
+      </p>
+      <div class="skill__box">
+        <div class="skill">
+          <span>Photoshop</span>
+          <div class="skill__percent__box">
+            <div class="skill__percent">
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>jQuery</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 60%; background: #ec5453; color: #ec5453"
+            >
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>HTML5</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 85%; background: #f9bf3f; color: #f9bf3f"
+            >
+              <span>85%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS3</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 90%; background: #a84cb8; color: #a84cb8"
+            >
+              <span>90%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Wordpress</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 70%; background: #2fa499; color: #2fa499"
+            >
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>SEO</span>
+          <div class="skill__percent__box">
+            <div
+              class="skill__percent"
+              style="width: 80%; background: #4054b2; color: #4054b2"
+            >
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <span class="section__title">experience</span>
+      <span class="section__subtitle">work experience</span>
+
+      <div class="exp__container">
+        <div class="exp__box">
+          <h2>React Developer <span>2017-2018</span></h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+            magni! Culpa, quaerat eveniet excepturi fuga dolore, voluptatem
+            dolorum vero esse odit earum ipsa! Odio hic id obcaecati? Nostrum,
+            laboriosam odio.
+          </p>
+          <div>
+            <i class="fa-regular fa-pen-to-square"></i>
+          </div>
+        </div>
+        <div class="exp__box">
+          <h2>Lecturer <span>2017-2018</span></h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero,
+            magni! Culpa, quaerat eveniet excepturi fuga dolore, voluptatem
+            dolorum vero esse odit earum ipsa! Odio hic id obcaecati? Nostrum,
+            laboriosam odio.
+          </p>
+          <div>
+            <i class="fa-regular fa-pen-to-square"></i>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
@@ -187,18 +297,6 @@
         </form>
       </div>
     </section>
-
-    <svg
-      style="padding: 100px"
-      width="100"
-      height="100"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M 50 0 L 95 25 L 95 75 L 50 100 L 5 75 L 5 25 L 50 0"
-        fill="red"
-      />
-    </svg>
 
     <script>
       function submitForm(event) {
