@@ -91,6 +91,7 @@
   letter-spacing: 1px;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 }
 
 /* .sidebar__list__item:hover {
