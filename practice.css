@@ -1,0 +1,137 @@
+.paragraph1::first-line {
+  color: red;
+}
+
+.paragraph2::first-letter {
+  font-size: 50px;
+}
+
+h1::before {
+  content: "Hello ";
+}
+
+h2::after {
+  content: " World!";
+}
+
+.box1 {
+  background: #000;
+  height: 10px;
+}
+
+.box2 {
+  background: red;
+  width: 70%;
+  height: 10px;
+}
+
+.box3 {
+  background: #000;
+  height: 10px;
+  position: relative;
+}
+
+.box4 {
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 10px;
+}
+
+.box5 {
+  background: #000;
+  height: 10px;
+  position: relative;
+}
+
+.box5::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 10px;
+  background: red;
+}
+
+.box6 {
+  width: 75%;
+  position: relative;
+  height: 10px;
+  background: red;
+}
+
+.box6 > span {
+  position: absolute;
+  right: 0;
+  top: -22px;
+}
+
+.box7 {
+  position: relative;
+  height: 10px;
+  background: #000;
+}
+
+.box8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  background: red;
+  height: 10px;
+  position: relative;
+}
+
+.box8 > span {
+  position: absolute;
+  right: 0;
+  top: -22px;
+}
+
+.box9 {
+  height: 10px;
+  background: #000;
+  position: relative;
+}
+
+.box9::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 75%;
+  background: red;
+  top: 0;
+  left: 0;
+}
+
+.box9::after {
+  content: "75%";
+  position: absolute;
+  top: -22px;
+  right: 25%;
+}
+
+#home {
+  position: relative;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+#home::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #000;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+#home:hover::after {
+  width: 150%;
+}
