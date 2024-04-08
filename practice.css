@@ -70,15 +70,11 @@ h2::after {
 }
 
 .box7 {
-  position: relative;
   height: 10px;
   background: #000;
 }
 
 .box8 {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 75%;
   background: red;
   height: 10px;
