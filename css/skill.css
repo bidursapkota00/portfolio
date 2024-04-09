@@ -54,3 +54,16 @@
   line-height: 1.2;
   font-weight: 600;
 }
+
+@media screen and (min-width: 992px) {
+  .skill__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  .skill {
+    flex: 0 0 calc(50% - 30px);
+  }
+}
